@@ -30,13 +30,13 @@ public class QuizService {
             char answer = scanner.next().charAt(0);
 
             if (q.isCorrect(answer)) {
-                System.out.println("✅ Correct!");
+                System.out.println("Correct!");
                 score++;
             } else {
-                System.out.println("❌ Wrong! Correct answer: " + q.correctOption);
+                System.out.println("Wrong! Correct answer: " + q.correctOption);
             }
         }
 
-        System.out.println("\n🎉 Quiz Completed! Your score: " + score + "/" + questions.size());
+        System.out.println("\nQuiz Completed! Your score: " + score + "/" + questions.size());
     }
 }
